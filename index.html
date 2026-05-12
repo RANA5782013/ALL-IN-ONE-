@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All In One - Learning Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(180deg, #F0F4FF 0%, #D9E2FF 100%);
+            min-height: 100vh;
+        }
+        .btn-blue-teal {
+            background: linear-gradient(90deg, #0056D2 0%, #00C3A0 100%);
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .geometric-shape {
+            position: absolute;
+            z-index: -1;
+            opacity: 0.1;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-900">
+
+    <header class="flex justify-between items-center px-6 py-6 max-w-7xl mx-auto">
+        <div class="flex items-center gap-2">
+            <div class="bg-[#004AAD] text-white w-10 h-10 flex items-center justify-center rounded-lg font-bold text-xl">
+                AD
+            </div>
+            <div class="text-2xl font-black tracking-tight">
+                ALL <span class="text-[#004AAD]">IN</span> <span class="text-[#00C3A0]">ONE</span>
+            </div>
+        </div>
+        <button class="bg-[#0066CC] text-white px-6 py-2 rounded-full font-bold text-sm hover:opacity-90 transition">
+            Get started
+        </button>
+    </header>
+
+    <main class="relative flex flex-col items-center text-center px-6 pt-12 pb-20 max-w-4xl mx-auto">
+        
+        <div class="geometric-shape top-20 left-0">
+            <svg width="250" height="250" viewBox="0 0 100 100">
+                <path d="M50 10 L90 90 L10 90 Z" fill="none" stroke="#004AAD" stroke-width="0.5"/>
+            </svg>
+        </div>
+
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect mb-8 shadow-sm">
+            <i class="fas fa-wand-magic-sparkles text-[#00C3A0]"></i>
+            <span class="text-xs md:text-sm font-semibold text-gray-600">AI-powered learning, exams & courses</span>
+        </div>
+
+        <h1 class="text-5xl md:text-7xl font-black leading-tight mb-6 tracking-tight">
+            One platform for<br>
+            <span class="text-[#004AAD]">exams,</span> <span class="text-[#00C3A0]">learning</span><br>
+            and skills.
+        </h1>
+
+        <p class="text-gray-500 text-lg md:text-xl max-w-2xl mb-10 leading-relaxed font-medium">
+            Teachers generate full exams in seconds. Students learn any topic with practical examples and games. Everyone masters real-world skills like Python, HTML, CSS, JS & SQL.
+        </p>
+
+        <div class="flex flex-col gap-4 w-full max-w-sm">
+            <button class="btn-blue-teal text-white py-4 rounded-full font-bold text-lg flex items-center justify-center gap-2 shadow-lg hover:brightness-110 transition">
+                Start for ₹100/month 
+                <i class="fas fa-arrow-right text-sm"></i>
+            </button>
+            
+            <button class="bg-white text-gray-800 py-4 rounded-full font-bold text-lg border border-gray-100 shadow-sm hover:bg-gray-50 transition">
+                Explore features
+            </button>
+        </div>
+
+        <div class="mt-14 flex flex-wrap justify-center gap-x-8 gap-y-4">
+            <div class="flex items-center gap-2 font-bold text-gray-600 text-sm">
+                <i class="fas fa-check-circle text-[#00C3A0]"></i>
+                Auto-grading
+            </div>
+            <div class="flex items-center gap-2 font-bold text-gray-600 text-sm">
+                <i class="fas fa-check-circle text-[#00C3A0]"></i>
+                Practical games
+            </div>
+            <div class="flex items-center gap-2 font-bold text-gray-600 text-sm">
+                <i class="fas fa-check-circle text-[#00C3A0]"></i>
+                Private & secure payments
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
